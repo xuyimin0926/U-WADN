@@ -50,3 +50,5 @@ python train_selector.py --stage 2
 
 This repo is built upon the framework of [AirNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet/tree/main/data), and we borrow some code from [Slimmable Network](https://github.com/JiahuiYu/slimmable_networks), thanks for their excellent work!
 
+## Personal Information
+If you have questions on my work, please feel free to contact me on xuyimin9626@gmail.com
