@@ -2,7 +2,7 @@ from torch import nn
 
 from net.encoder import CBDE
 from net.DGRN import DGRN
-from net.slimmable_op import SlimmableConv2d
+from net.wac_op import *
 
 
 class AirNet(nn.Module):
@@ -16,7 +16,7 @@ class AirNet(nn.Module):
         self.E = CBDE(opt)
 
         # Transforms
-        self.transform = SlimmableConv2d(
+        self.transform = WidthAdaptiveConv2d(
             in_channels_list=[64 for _ in width_mult_list],
             out_channels_list=[int(64 * width_mult) for width_mult in width_mult_list],
             width_mult_list=width_mult_list,
